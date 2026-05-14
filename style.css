@@ -732,9 +732,9 @@ i[data-lucide] {
 
   .proof-row,
   .service-strip,
-  .about-highlights,
-  .process-steps {
+  .about-highlights {
     display: flex;
+
     gap: 14px;
 
     overflow-x: auto;
@@ -753,17 +753,36 @@ i[data-lucide] {
       rgba(255, 255, 255, 0.08);
   }
 
+  /* PROCESS */
+
+  .process-steps {
+    display: flex;
+
+    gap: 14px;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 0;
+
+    margin-inline: -12px;
+    padding-inline: 12px;
+
+    scrollbar-width: none;
+  }
+
+  /* SCROLLBAR */
+
   .proof-row::-webkit-scrollbar,
   .service-strip::-webkit-scrollbar,
-  .about-highlights::-webkit-scrollbar,
-  .process-steps::-webkit-scrollbar {
+  .about-highlights::-webkit-scrollbar {
     height: 5px;
   }
 
   .proof-row::-webkit-scrollbar-track,
   .service-strip::-webkit-scrollbar-track,
-  .about-highlights::-webkit-scrollbar-track,
-  .process-steps::-webkit-scrollbar-track {
+  .about-highlights::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.08);
 
     border-radius: 999px;
@@ -773,8 +792,7 @@ i[data-lucide] {
 
   .proof-row::-webkit-scrollbar-thumb,
   .service-strip::-webkit-scrollbar-thumb,
-  .about-highlights::-webkit-scrollbar-thumb,
-  .process-steps::-webkit-scrollbar-thumb {
+  .about-highlights::-webkit-scrollbar-thumb {
     background:
       linear-gradient(
         90deg,
