@@ -678,6 +678,8 @@ i[data-lucide] {
 
 /* MOBILE */
 
+/* MOBILE */
+
 @media (max-width: 620px) {
 
   .container {
@@ -702,7 +704,6 @@ i[data-lucide] {
 
   .hero-new h1 {
     font-size: 40px;
-
     line-height: 1;
   }
 
@@ -714,23 +715,88 @@ i[data-lucide] {
     width: 100%;
   }
 
-  .proof-row,
-  .service-strip,
-  .process-steps {
-    grid-template-columns: 1fr;
-  }
+  /* HERO CARD */
 
   .hero-panel,
   .about-box,
   .final-block-inner {
     padding: 26px;
-
     border-radius: 24px;
   }
+
+  /* SECTION */
 
   .section {
     padding: 56px 0;
   }
+
+  /* HORIZONTAL SCROLL */
+
+  .proof-row,
+  .service-strip,
+  .about-highlights,
+  .process-steps {
+    display: flex;
+    gap: 14px;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    padding-bottom: 12px;
+
+    margin-inline: -12px;
+    padding-inline: 12px;
+
+    scrollbar-width: none;
+  }
+
+  .proof-row::-webkit-scrollbar,
+  .service-strip::-webkit-scrollbar,
+  .about-highlights::-webkit-scrollbar,
+  .process-steps::-webkit-scrollbar {
+    display: none;
+  }
+
+  .proof-row > div,
+  .service-strip > article,
+  .about-highlights > div,
+  .process-steps > div {
+    min-width: 82%;
+
+    flex-shrink: 0;
+
+    scroll-snap-align: start;
+  }
+
+  /* ABOUT */
+
+  .about-new-grid {
+    gap: 24px;
+  }
+
+  .about-box p {
+    font-size: 16px;
+  }
+
+  /* PROCESS */
+
+  .process-grid {
+    gap: 26px;
+  }
+
+  /* FINAL CTA */
+
+  .final-block h2 {
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .final-block p {
+    font-size: 16px;
+  }
+
+  /* FOOTER */
 
   .footer-new-content {
     flex-direction: column;
