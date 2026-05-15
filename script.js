@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5514998765432";
+const WHATSAPP_NUMBER = "14998765432";
 
 const DEFAULT_MESSAGE =
   "Olá! Vim pelo site e gostaria de fazer um orçamento para ar-condicionado.";
